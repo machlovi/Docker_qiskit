@@ -1,0 +1,32 @@
+// syntax = "proto3";
+
+// message Number {
+//   float value = 1;
+// }
+
+
+// // message Response
+// // {
+// //   string name = 1;
+// // }
+
+// service Quantam {
+//   rpc circut(Number) returns (Number){}
+// }
+
+
+syntax = "proto3";
+
+message Number {
+  float value = 1;
+}
+
+
+message Response
+{
+  string name = 1;
+}
+
+service Quantam {
+  rpc circut(Number) returns (Response){}
+}
