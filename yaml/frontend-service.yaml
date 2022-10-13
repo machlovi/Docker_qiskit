@@ -1,0 +1,13 @@
+# apiVersion : v1
+apiVersion: v1
+kind: Service
+metadata:
+  name: qiskit
+spec:
+  selector:
+    app: qiskit
+  ports:
+  - port: 50051
+    targetPort: 50051
+  type: LoadBalancer
+
