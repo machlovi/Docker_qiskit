@@ -1,5 +1,9 @@
 apiVersion : v1
+<<<<<<< HEAD
 kind: Pod
+=======
+kind: ReplicationController
+>>>>>>> fbbd84936cc0ab9b5ed056732889d42b9f536118
 metadata:
   name: qiskit
 spec:
@@ -16,4 +20,8 @@ spec:
         - name: qiskit
           image: machlovi/dockerqiskit_2
           ports:
+<<<<<<< HEAD
             - containerPort: 8080
+=======
+            - containerPort: 50051
+>>>>>>> fbbd84936cc0ab9b5ed056732889d42b9f536118
