@@ -10,7 +10,7 @@ from grpc_generated_files import (qik_test_pb2_grpc,qik_test_pb2)
 
 
 # Step 1: Create a Channel
-channel = grpc.insecure_channel('localhost:8080')
+channel = grpc.insecure_channel('localhost:80')
 
 # Step 2: Create a Stub
 stub = qik_test_pb2_grpc.QuantamStub(channel)

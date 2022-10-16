@@ -27,8 +27,8 @@ class QuantamServicer(qik_test_pb2_grpc.QuantamServicer):
 def run():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     qik_test_pb2_grpc.add_QuantamServicer_to_server(QuantamServicer(), server)
-    print('Starting server. Listening on port 8080.')
-    server.add_insecure_port('localhost:8080')
+    print('Starting server. Listening on port 80.')
+    server.add_insecure_port('[::]:80')
     server.start()
 
     try:
